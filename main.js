@@ -12,6 +12,8 @@ app.get("/getInfo", function(req,res){
     res.json({ user: 'geekxxx' });
     
 });
+
+
 app.post("/clientes/salvar", function(req,res){
     console.log(req.body);
     database.gravarDados({codigo:req.body.codigo,
@@ -39,3 +41,6 @@ app.get("/clientes/listar/:key", function(req,res){
 app.listen(PORT,function(){
     console.log("Servidor-Backend está rodando na porta: "+PORT);
 })
+
+
+module.exports = app;
