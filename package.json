@@ -4,7 +4,7 @@
   "description": "Backend - Aula 7",
   "main": "main.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --forceExit",
     "start": "nodemon main.js"
   },
   "author": "Rodrigo Jardim",
